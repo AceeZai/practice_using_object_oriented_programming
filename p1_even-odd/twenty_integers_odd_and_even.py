@@ -23,7 +23,11 @@ class NumberSeparator:
 
         print("Done creating even.txt and odd.txt")
 
-
 # RUN
+<<<<<<< HEAD:p1_even-odd/twenty_integers_odd_and_even.py
 number_separator = NumberSeparator("p1_even_odd/numbers.txt")
 number_separator.separate_even_and_odd()
+=======
+number_separator = NumberSeparator("numbers.txt")
+number_separator.separate_even_and_odd()
+>>>>>>> 66e5263200f6c133c09607cae7104754049da260:twenty_integers_odd_and_even.py

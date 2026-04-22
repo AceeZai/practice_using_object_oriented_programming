@@ -33,5 +33,5 @@ class IntegerProcessor:
 
 
 # RUN (OUTSIDE CLASS)
-processor = IntegerProcessor("integers.txt")
+processor = IntegerProcessor("p4_integer_processor/integers.txt")
 processor.process_integers()
