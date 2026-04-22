@@ -10,10 +10,10 @@ class NumberSeparator:
         input_file = open(self.input_filename, "r")
 
         for number_line in input_file:
-            num = int(number_line.strip())
+            number_value = int(number_line.strip())
 
-            if num % 2 == 0:
-                even_file.write(str(num) + "\n")
+            if number_line % 2 == 0:
+                even_file.write(str(number_value) + "\n")
             else:
-                odd_file.write(str(num) + "\n")
+                odd_file.write(str(number_value) + "\n")
 
