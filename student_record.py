@@ -5,7 +5,7 @@ class StudentRecord:
     def find_highest_gwa(self):
         input_file = open(self.input_filename, "r")
 
-        highest_student_name = " "
+        highest_student_name = ""
         highest_gwa_value = -1
 
         for student_line in input_file:
@@ -18,4 +18,8 @@ class StudentRecord:
                 highest_gwa_value = gwa_value
                 highest_student_name = student_name
 
+        input_file.close()
+
+        print("Top Student:", highest_student_name)
+        print("GWA:", highest_gwa_value)
 
