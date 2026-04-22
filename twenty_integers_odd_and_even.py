@@ -12,8 +12,18 @@ class NumberSeparator:
         for number_line in input_file:
             number_value = int(number_line.strip())
 
-            if number_line % 2 == 0:
+            if number_value % 2 == 0:
                 even_file.write(str(number_value) + "\n")
             else:
                 odd_file.write(str(number_value) + "\n")
 
+        input_file.close()
+        even_file.close()
+        odd_file.close()
+
+        print("Done creating even.txt and odd.txt")
+
+
+# RUN
+number_separator = NumberSeparator("numbers.txt")
+number_separator.separate_even_and_odd()
